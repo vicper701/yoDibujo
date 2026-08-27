@@ -1,0 +1,49 @@
+name: yodibujo
+description: >-
+  yoDibujo — App para dibujar planos de redes de distribución eléctrica sobre
+  un mapa georreferenciado. Bloque 1: fundación, modelo de datos y persistencia.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Identificadores y utilidades
+  uuid: ^4.3.3
+
+  # Bloque 2: mapa, proyección, GPS, importación KMZ
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.1
+  proj4dart: ^2.1.0
+  geolocator: ^11.0.0
+  archive: ^3.4.10 # descomprimir .kmz (zip) para leer el .kml
+  xml: ^6.5.0 # parsear el .kml y el viewBox de SVG propios
+  flutter_svg: ^2.0.10+1 # render de símbolos propios importados (Bloque 3)
+  flutter_colorpicker: ^1.1.0 # selector de color HSV/RGB en Configuración
+  pdf: ^3.11.0
+  printing: ^5.13.0
+  path_provider: ^2.1.4 # carpeta temporal para escribir el .ydib
+ # diálogo del sistema para guardar/compartir el .ydib
+
+  # Firebase (Bloque 1: Auth, Firestore, Storage)
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.8
+  cloud_firestore: ^4.15.8
+  firebase_storage: ^11.6.9
+  share_plus: ^10.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/catalog/categorias.json
+    - assets/simbolos/simbolos_enee.json

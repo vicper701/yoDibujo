@@ -1,0 +1,51 @@
+<<<<<<< HEAD
+# Flutter/Dart/Pub specifics
+.dart_tool/
+.packages
+build/
+.pub/
+.flutter-plugins
+.pubspec.lock
+
+# IDE specifics
+.idea/
+.vscode/
+*.iml
+
+# Firebase configuration files (kept private)
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+web/firebase-init.js
+macos/Runner/GoogleService-Info.plist
+windows/runner/google-services.json
+linux/flutter/google-services.json
+=======
+# Firebase build and deployment files
+/firebase-debug.log
+/firebase-debug.*.log
+.firebaserc
+
+# Firebase Hosting
+/firebase.json
+*.cache
+hosting/.cache
+
+# Firebase Functions
+/functions/node_modules/
+/functions/.env
+/functions/package-lock.json
+
+# Firebase Emulators
+/firebase-*.zip
+/.firebase/
+/emulator-ui/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (local configs)
+/.env.*
+>>>>>>> 0cec389a8915d3938ab309d7117d8df46560cf15
